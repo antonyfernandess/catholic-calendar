@@ -1,0 +1,25 @@
+# This file is used to configure the Dart analyzer and linter for this project.
+# The Dart analyzer is a static analysis tool that provides feedback about potential errors, 
+# warnings, and lints in your Dart code. The linter is a set of rules that enforce coding style and best practices.
+include: package:flutter_lints/flutter.yaml
+
+# This establishes a set of rules for the Dart analyzer and linter to follow.
+analyzer: 
+  language: 
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+  errors: 
+    missing_required_param: error
+    missing_return: error
+
+# This section defines the linter rules that will be applied to the Dart code in this project.
+linter:
+  rules:
+    - prefer_const_constructors
+    - prefer_final_locals
+    - always_declare_return_types
+    - avoid_print
+    - unnecessary_this
+    - sort_constructors_first
+    
